@@ -1,9 +1,12 @@
 module WaveApps
-  module Ruby
-  end
 end
 
-require 'waveapps/api'
-require 'waveapps/wrapper'
-require 'waveapps/object'
-require 'waveapps/ruby'
+require 'faraday'
+require 'oj'
+require 'dry-types'
+require 'dry-struct'
+require 'waveapps/types'
+require 'waveapps/client'
+require 'waveapps/business'
+
+Oj.default_options = { symbol_keys: true }

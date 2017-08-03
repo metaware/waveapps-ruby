@@ -10,9 +10,25 @@ RSpec.configure do |config|
   config.order = 'random'
 
   config.before :suite do
-    WaveApps::Ruby.configure do |c|
-      c.client_id = "234234"
-      c.client_secret = "sdfkjnsdfkj"
-    end
+    # WaveApps.configure do |c|
+    #   c.client_id = "234234"
+    #   c.client_secret = "sdfkjnsdfkj"
+    # end
   end
 end
+
+# c = WaveApps::Client.new('gmP0XZUubYcsFRJZwIP8oERUhuz6eU')
+
+# client = WaveApps::Client.new(access_token)
+
+# client.business.list(limit: 3)
+# client.business.find(123)
+
+# [WaveApps::Currency, WaveApps::Currency, WaveApps::Currency] = client.currency.list(limit: 10)
+# currency = WaveApps::Currency = client.currency.find(123)
+# currency.update(attributes)
+# currency.delete
+# client.currency.delete(123)
+
+# client.invoice.list(limit: 10)
+# client.invoice.find(123)
