@@ -1,5 +1,7 @@
 module WaveApps
+  module Ruby
+  end
 end
 
-require 'waveapps/api'
-require 'waveapps/api/config'
+require 'waveapps/ruby'
+require 'waveapps/ruby/config'

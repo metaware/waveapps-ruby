@@ -1,7 +1,7 @@
 require 'dry-configurable'
 
 module WaveApps
-  module Api
+  module Ruby
     module Config
       def self.included(base)
         base.extend Dry::Configurable
@@ -16,7 +16,7 @@ module WaveApps
       end
 
       def config
-        WaveApps::Api.config
+        WaveApps::Ruby.config
       end
     end
   end
