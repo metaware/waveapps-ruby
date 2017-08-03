@@ -2,8 +2,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-class WaveApps::Business < WaveApps::Object
-  include Virtus.model
+class WaveApps::Object::Business < WaveApps::Object
   attribute :name, String
 
   def self.all

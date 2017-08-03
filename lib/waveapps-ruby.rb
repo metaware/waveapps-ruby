@@ -1,6 +1,4 @@
 module WaveApps
-  module Api
-  end
 end
 
 require 'waveapps/api'

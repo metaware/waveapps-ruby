@@ -11,10 +11,6 @@ module WaveApps
     ACCESS_TOKEN_URL = "/oauth2/token/"
     BUSINESS_URL = "/businesses/"
 
-    def initialize(access_token)
-      self.access_token = access_token
-    end
-
     def self.access_url
       params = {
         client_id: config.client_id,
