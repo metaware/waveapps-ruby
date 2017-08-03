@@ -1,4 +1,10 @@
+require 'waveapps/ruby/config'
+require 'securerandom'
+require 'net/http'
+require 'json'
 
-class WaveApps::Object
-  include Virtus.model
+module WaveApps
+  class Object
+    include Virtus.model
+  end
 end
