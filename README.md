@@ -21,8 +21,23 @@ Or install it yourself as:
     $ gem install waveapps-ruby
 
 ## Usage
+```
+  client = WaveApps::Client.new(access_token)
 
-TODO: Write usage instructions here
+  client.business.list(limit: 3)
+  client.business.find(123)
+
+  client.invoices.list({business: i})
+
+  [WaveApps::Currency, WaveApps::Currency, WaveApps::Currency] = client.currency.list(limit: 10)
+  currency = WaveApps::Currency = client.currency.find(123)
+  currency.update(attributes)
+  currency.delete
+  client.currency.delete(123)
+
+  client.invoice.list(limit: 10)
+  client.invoice.find(123)
+```
 
 ## Development
 
