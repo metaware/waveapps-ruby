@@ -17,12 +17,13 @@ RSpec.configure do |config|
   end
 end
 
-# c = WaveApps::Client.new('gmP0XZUubYcsFRJZwIP8oERUhuz6eU')
 
 # client = WaveApps::Client.new(access_token)
 
 # client.business.list(limit: 3)
 # client.business.find(123)
+
+# client.invoices.list({business: i})
 
 # [WaveApps::Currency, WaveApps::Currency, WaveApps::Currency] = client.currency.list(limit: 10)
 # currency = WaveApps::Currency = client.currency.find(123)
